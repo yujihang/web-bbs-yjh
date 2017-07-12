@@ -1,0 +1,98 @@
+.content_adminBoard{
+	margin: 0.5% 4.5% 1.5%;
+	width: 91%;
+	min-height: 84%;
+	border-radius: 5px;
+	box-shadow: 0px 4px 5px #444;
+	background: linear-gradient(pink 0%,skyblue 50%,pink 100%);
+}
+
+@media (max-width: 415px) {
+	.content_adminBoard{
+		margin: 0;
+		padding-left: 0;
+		width: 100%;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
+.content_adminBoard h1{
+	padding: 1% 0;
+	font-size: 0.12rem;
+	color: antiquewhite;
+}
+@media (max-width: 415px) {
+.content_adminBoard h1{
+	font-size: 0.2rem;
+}
+}
+.center{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+div .span10{
+	width: 7%;
+	padding-left: 1%;
+}
+div .span20{
+	width: 19%;
+	padding-left: 1%;
+}
+div .span15{
+	width: 14%;
+	padding-left: 1%;
+}
+div .span30{
+	width: 29%;
+}
+div .span33{
+	width: 32.8%;
+}
+@media (max-width: 700px) {
+div .span33{
+	width: 32.3%;
+}
+}
+#board div p{
+	display: inline-block;
+	text-align: center;
+}
+#board div{
+	padding: 1% 0;
+	border-bottom: 1px solid whitesmoke;
+	text-align: center;
+}
+.hang  p{
+	display: inline-block;
+	text-align: center;
+	height: 25px;
+	padding:1% 0; 
+}
+
+input[type=button]{
+	margin: 20px;
+	padding: 4px;
+	background: none;
+	border: solid 1px white;
+	border-radius: 2px;
+	box-shadow: 0px 1px 1px #444;
+}
+input[type=button]:hover{
+	background: white;
+}
+
+.active{
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #444;
+	background: linear-gradient(to right,pink 0%,white 50%,pink 100%);
+}
+.inactive{
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #444;
+	background: linear-gradient(to right,pink 0%,skyblue 50%,pink 100%);
+}
+.inactive:hover{
+	background: linear-gradient(to right,pink 0%,white 50%,pink 100%);
+}

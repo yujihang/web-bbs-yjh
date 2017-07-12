@@ -1,0 +1,48 @@
+.marquee-box1,
+.marquee-box1 *{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.marquee-box1 {
+	position: relative;
+	width: 98%;
+	height: 84%;
+	background: #eee;
+	margin: 1%;
+	overflow: hidden;
+	background: #E7ECF0;
+	box-shadow: 1px 1px 2px #D4D4D4,0 -1px 2px #D4D4D4;
+	border-radius: 3px;
+}
+@media (max-width: 415px) {
+	.marquee-box1{
+		height: 87%;
+		margin: 4px 3px;
+	}
+}
+.marquee-inner1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.marquee-box1 ul li {
+	padding: 0 0 0 4px;
+	width: 99%;
+	height: 30px;
+	/*省略号*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media (max-width: 750px) {
+	.marquee-box1 ul li {
+	width: 98%;
+	padding: 0;
+	height: 21px;
+	font-size: 0.12rem;
+}
+}

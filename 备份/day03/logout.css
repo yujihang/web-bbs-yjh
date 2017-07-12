@@ -1,0 +1,302 @@
+body{
+	color: #333;
+	font: 400 16px/1.5 Microsoft YaHei, sans-serif;
+	overflow: auto;
+}
+@media (max-width: 415px) {
+	body{font-size: 0.16rem;}
+}
+
+.bgcolor{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;/*即使内容区高度不够,footer也在底部*/
+	z-index: 2;
+	background: #000000;
+}
+/*顶部栏*/
+.bbs-header{
+	width: 100%;
+	height: 50px;
+	background-color: #CFCFCF;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 3px 3px #C2CCD1;
+}
+@media (max-width: 415px) {
+	.bbs-header{
+		height: 0.5rem;
+	}
+}
+.bbs-header .left{
+	position: absolute;
+	left: 0;
+	padding: 0 60px;
+}
+@media (max-width: 415px) {
+	.bbs-header .left{
+		padding: 0 20px;
+	}
+}
+.bbs-header .right{
+	position: absolute;
+	right: 20px;
+}
+.bbs-header .right a{
+	padding: 0 10px;
+	color: red;
+}
+.bbs-header .right a:active,
+.bbs-header .right a:hover{
+	color: white;
+}
+/*内容区*/
+.bbs-content{
+	flex:1;
+	position: relative;
+}
+
+
+/*滚动图片*/
+.bbs-content .content1{
+	position: absolute;
+	top: 4%;
+	left:4%;
+	margin: 2px;
+	/*height: 280px;*/ /*与slide设置为一样的值*/
+}
+@media (max-width: 415px) {
+	.bbs-content .content1{
+	/*padding-top: 0px;*/
+	top:2%;
+	left:0px;
+	/*height: 280px;*/
+}
+}
+
+/*slide*/
+.container3D{
+	background: #eee;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0px 4px 5px #444;
+}
+
+.bbs-content .content2{
+	position: absolute;
+	top: 50%;
+	left:4%;
+	width: 90.909%;
+	height: 48%; /*与slide设置为一样的值*/
+	/*background: #FFE69F;*/
+}
+@media (max-width: 415px) {
+	.bbs-content .content2{
+	width: 100%;
+	top:3.15rem;
+	left:0px;
+}
+}
+
+.content2 img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 3px;
+	box-shadow: 1px 1px 3px #444;
+}
+.img-hover img:hover{
+	-webkit-animation: imghover 1s linear;
+	-moz-animation: imghover 1s linear;
+	-o-animation: imghover 1s linear;
+	-ms-animation: imghover 1s linear;
+	animation: imghover 1s linear;
+}
+
+@-webkit-keyframes imghover {
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes imghover {
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes imghover {
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes imghover {
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes imghover {
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.game,.highlight-box{
+	width: 25%;
+	height: 85%;
+	/*background: #00A2D4;*/
+	margin: 2% 0;
+	overflow: hidden;
+	position: relative;
+}
+@media (max-width: 415px) {
+	.game{
+		margin: 0;
+		width: 60%;
+		height: 30%;
+	}
+}
+
+.music{
+	position: absolute;
+	top: 0;
+	left: 26%;
+	width: 25%;
+	height: 40%;
+	margin-top: 2%;
+}
+@media (max-width: 415px) {
+	.music{
+		margin: 0;
+		top: 35%;
+		left: 0;
+		width: 40%;
+		height: 30%;
+	}
+}
+
+.dictionary{
+	position: absolute;
+	top: 0;
+	left: 52%;
+	width: 18%;
+	height: 40%;
+	margin-top: 2%;
+}
+@media (max-width: 415px) {
+	.dictionary{
+		margin: 0;
+		left: 42%;
+		top: 35%;
+		width: 18%;
+		height: 30%;
+	}
+}
+
+.todolist{
+	position: absolute;
+	top: 45%;
+	left: 26%;
+	width: 18%;
+	height: 40%;
+	margin-top: 2%;
+}
+@media (max-width: 415px) {
+	.todolist{
+		margin: 0;
+		left: 0;
+		top: 69%;
+		width: 18%;
+		height: 30%;
+	}
+}
+
+.taobao{
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	width: 25%;
+	height: 40%;	
+	margin-top: 2%;
+}
+@media (max-width: 415px) {
+	.taobao{
+		margin: 0;
+		top: 69%;
+		left: 20%;
+		width: 40%;
+		height: 30%;
+	}
+}
+
+.lianjie{
+	position: absolute;
+	left: 72%;
+	top: 0;
+	width: 28%;
+	height: 85%;
+	margin-top: 2%;
+	background: #F0F0EE;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px #444;
+	/*opacity: 0.5;*/
+}
+@media (max-width: 415px) {
+	.lianjie{
+		margin: 0;
+		left: 63%;
+		width: 37%;
+		height: 99%;
+	}
+}
+.lianjie p{
+	width: 100%;
+	/*margin: 5px auto;*/
+	padding: 2% 0;
+	text-align: center;
+	background: #31C135;
+	opacity: 0.7;
+	box-shadow: 0 1px 3px #444;
+}
+.lianjie a:hover,
+.lianjie a:active{
+	color: red;
+}
+
+/*底部栏*/
+.bbs-footer{
+	width: 100%;
+	height: 50px;
+	background-color: #CFCFCF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px -3px 3px #C2CCD1;
+}
+@media (max-width: 415px) {
+	.bbs-footer{
+		font-size: 0.08rem;
+	}
+}
+

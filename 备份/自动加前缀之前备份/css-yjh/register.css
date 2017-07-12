@@ -1,0 +1,39 @@
+
+@media (min-width: 415px) {
+	.bbs-content .content1{
+	height: 60%;
+	/*background: #00A2D4;*/
+	}
+	/*黄色背景部分*/
+	.content1_register{
+		height: 56%;
+	}
+	.content1_register_table{
+	left: 25%;
+	width: 50%;
+	}
+	#submit,#reset{
+	height: 80%;
+	}
+}
+
+.content1_register_table p{
+	height: 13%;
+  	margin-bottom: 0;
+}
+@media (max-width: 415px) {
+	.content1_register_table p{
+	  	margin-bottom: 0;
+	}
+}
+
+#submit,#reset{
+	left: 0;
+	margin: 0 3.5%;
+}
+
+
+
+
+
+

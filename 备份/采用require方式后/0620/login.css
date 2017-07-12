@@ -1,0 +1,47 @@
+/*黄色背景部分*/
+.content1_login{
+	position: absolute;
+	top: 2%;
+	left: 4.5%;
+	width: 91%;
+	height: 50%;
+	/*background: #F2EA2F;*/
+	border-radius: 5px;
+	box-shadow: 0px 4px 5px #444;
+	background: linear-gradient(#F2EA2F,#FBF8BA);
+}
+
+@media (max-width: 415px) {
+	.content1_login{
+		top: 6px;
+		left: 0;
+		width: 100%;
+		height: 48%;
+	}
+}
+
+.content1_login_form{
+	position: relative;
+	left: 35%;
+	top: 15%;
+	width: 30%;
+	height: 70%;
+	background: #0000FF;
+}
+@media (max-width: 415px) {
+	.content1_login_form{
+		left: 10%;
+		top: 10%;
+		width: 80%;
+		height: 80%;
+	}
+}
+
+
+.center{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+

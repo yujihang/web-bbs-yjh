@@ -1,0 +1,45 @@
+
+ul li{
+	float: left;
+	background: #31C135;
+	margin: 4% 4.5% 1% 4.5%;
+	padding: 1% 1%;
+	text-align: center;
+	font-size: 0.14rem;
+	border-radius: 5px;
+	box-shadow: 1px 2px 4px #444;	
+}
+ul li:nth-child(2n){
+	background: #BC24C9;
+}
+ul li:nth-child(3n){
+	background: orange;
+}
+ul li:nth-child(4n){
+	background: dodgerblue;
+}
+
+
+@media (max-width: 415px) {
+		ul li{
+			margin: 14% 10% 2% 15%;
+			padding: 1% 1%;
+			font-size: 0.2rem;
+		}
+		ul li:nth-child(2n){
+			margin: 18% 10% 2% 10%;
+		}
+		ul li:nth-child(3n){
+			margin: 14% 10% 2% 10%;
+		}
+}
+ul li a{
+	color: white;
+}
+ul li a:hover{
+	color: yellow;
+}
+ul li a:active{
+	font-size: 0.16rem;
+}
+

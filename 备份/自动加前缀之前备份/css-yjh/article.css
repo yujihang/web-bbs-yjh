@@ -1,0 +1,107 @@
+.content_article{
+	margin: 0.5% 4.5% 1.5%;
+	width: 91%;
+	border-radius: 5px;
+	box-shadow: 0px 4px 5px #444;
+	background: linear-gradient(pink 0%,skyblue 50%,pink 100%);
+}
+
+@media (max-width: 415px) {
+	.content_article{
+		margin: 0;
+		padding-left: 0;
+		width: 100%;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
+.center{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+#title{
+	padding-top: 2%;
+	font-size: 0.10rem;
+}
+@media (max-width: 415px) {
+	#title{
+		padding-top: 5%;
+		font-size: 0.20rem;
+	}
+}
+
+#poster,#post-time{
+	margin: 10px;
+}
+#content{
+	margin: 10px 20px;
+}
+textarea.xheditor{
+	margin: 10px 0;
+	margin-left:5%; 
+	width: 99%;
+	height: 100px;
+}
+
+/*点击回复出现文本区域*/
+textarea.none1{
+	width: 90%;
+	margin-left:5%;
+}
+.none{
+	display: none;
+}
+.pfont{
+	font-size: 12px;
+	color: 	#999;
+}
+#reviewlist{
+	margin-top:20px; 
+}
+.review{
+	margin: 5px;
+	border-bottom: 1px solid #000;
+}
+.inBlock{
+	display: inline-block;
+}
+.fright{
+	text-align: right;
+}
+.hover:hover,.hover2:hover,.hover1:hover{
+	cursor:pointer;
+}
+#reviewlist .hover,#reviewlist .hover2,#reviewlist .hover1{
+	color: #3333ff;
+}
+#reviewlist p{
+	margin: 5px;
+	padding: 0;
+}
+.fontcolor{
+	color: red;
+}
+.sonreview{
+	/*background: #F2EA36;*/
+	margin: 10px 0;
+	margin-left: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 5px #444;
+	background: linear-gradient(to left,#BDFBFA,white);
+}
+.inline{
+	display: inline-block;
+}
+
+.lastone{
+	width: 70px;
+	/*height: 32px;*/
+	font-size:16px;
+	color: black;
+	background: none;
+	border: solid 1px white;
+	border-radius: 2px;
+	box-shadow: 0px 1px 1px #444;
+	text-align: center;
+}

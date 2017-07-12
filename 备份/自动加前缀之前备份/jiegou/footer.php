@@ -1,0 +1,1 @@
+<div class="bbs-footer">Copyright©2017 &nbsp;&nbsp;&nbsp;All Rights Reserved &nbsp;&nbsp;&nbsp;Designed by yjh</div>

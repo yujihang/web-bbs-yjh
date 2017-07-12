@@ -1,0 +1,54 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	color: #333;
+	font: 400 16px/1.5 Microsoft YaHei, sans-serif;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 415px) {
+	body{font-size: 0.16rem;}
+}
+.bgcolor{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;/*即使内容区高度不够,footer也在底部*/
+	min-height: 100% !important;
+	z-index: 2;
+	/*background: #000000;*/
+}
+/*min-height为了兼容Firefox*/
+/*.bgcolor:after {
+　　content:"";
+　　visibility:hidden;
+　　display:block;
+　　clear:both;
+　　height:0px;
+}*/
+/*添加渐变效果*/
+.bbs-header{
+	background: linear-gradient(to right,#80C080 0%,white 80%,#1C98FE 100%);
+}
+@media (max-width: 415px) {
+	.bbs-header{
+		background: linear-gradient(to right,#80C080 0%,#41A9FE 100%);
+	}
+}
+
+.bgcolor{
+		background: linear-gradient(to right,#000000 0%,white 5%,#000000 50%,white 95%,#000000 100%);
+}
+@media (max-width: 415px) {
+	.bgcolor{
+		background: linear-gradient(#000000 0%,white 20%,#000000 40%,white 70%,#000000 100%);
+}
+}
+
+.bbs-footer{
+	background: linear-gradient(to right,#1C98FE 0%,white 35%,#CFCFCF 50%,white 65%,#1C98FE 100%);
+}
