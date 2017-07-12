@@ -30,3 +30,4 @@
 2、数据库的连接主要放在文件db_fns.php，要注意连接数据库的时候的用户名和密码 
 
 >>>>>>> first commit
+# web-bbs-yjh
